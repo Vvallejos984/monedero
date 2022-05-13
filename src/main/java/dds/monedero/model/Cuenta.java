@@ -31,7 +31,7 @@ public class Cuenta {
 
     Validacion.montoNegativo(cuanto);
 
-    Validacion.maximaCantidadDepositos(getMovimientos().stream().filter(movimiento -> movimiento.isDeposito()).count());
+    Validacion.maximaCantidadDepositos(movimientos.stream().filter(movimiento -> movimiento.isDeposito()).count());
 
     new Movimiento(LocalDate.now(), cuanto, true).agregateA(this);
   }
