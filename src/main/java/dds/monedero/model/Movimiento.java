@@ -51,9 +51,9 @@ public class Movimiento {
 
   public double calcularValor(Cuenta cuenta) {
     if (esDeposito) {
-      return cuenta.getSaldo() + getMonto();
+      return cuenta.getSaldo() + monto;
     } else {
-      return cuenta.getSaldo() - getMonto();
+      return cuenta.getSaldo() - monto;
     }
   }
 }
