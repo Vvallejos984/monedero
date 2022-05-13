@@ -40,7 +40,7 @@ public class Cuenta {
 
     Validacion.montoNegativo(cuanto);
 
-    Validacion.saldoMenor(cuanto, getSaldo());
+    Validacion.saldoMenor(cuanto, saldo);
 
     double montoExtraidoHoy = getMontoExtraidoA(LocalDate.now());
     double limite = 1000 - montoExtraidoHoy;
